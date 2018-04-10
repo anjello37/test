@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10153448379,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LambdaGlueBase.java:20"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Successful Login",
+        "description": "",
+        "id": "login;successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 1189691625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LambdaGlueBase.java:60"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14697171021,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on Login Page",
+            "match": {
+              "location": "loginStepdefs.java:14"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12141243759,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter correct username and password",
+            "match": {
+              "location": "loginStepdefs.java:20"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136834433,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to login successfully",
+            "match": {
+              "location": "loginStepdefs.java:24"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@onescenario"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "C:/Users/clavios/eclipse-workspace/CSMAutomation/src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@scenarios"
+      },
+      {
+        "line": 1,
+        "name": "@login"
+      }
+    ]
+  }
+]
