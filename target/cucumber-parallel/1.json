@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 10153448379,
+              "duration": 11305880668,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 5,
-        "name": "Successful Login",
+        "name": "Successful Login via COSMAPP",
         "description": "",
-        "id": "login;successful-login",
+        "id": "login;successful-login-via-cosmapp",
         "after": [
           {
             "result": {
-              "duration": 1189691625,
+              "duration": 1185357961,
               "status": "passed"
             },
             "match": {
@@ -34,37 +34,43 @@
         "steps": [
           {
             "result": {
-              "duration": 14697171021,
+              "duration": 16902909770,
               "status": "passed"
             },
             "line": 6,
-            "name": "I am on Login Page",
+            "name": "I am on Login Page and COSMAPP is present",
             "match": {
-              "location": "loginStepdefs.java:14"
+              "location": "loginStepdefs.java:20"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 12141243759,
+              "duration": 20959137969,
               "status": "passed"
             },
             "line": 7,
             "name": "I enter correct username and password",
             "match": {
-              "location": "loginStepdefs.java:20"
+              "arguments": [
+                {
+                  "val": "correct",
+                  "offset": 8
+                }
+              ],
+              "location": "loginStepdefs.java:26"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 136834433,
+              "duration": 150932733,
               "status": "passed"
             },
             "line": 8,
-            "name": "I should be able to login successfully",
+            "name": "I should be able to login successfully via COSMAPP",
             "match": {
-              "location": "loginStepdefs.java:24"
+              "location": "loginStepdefs.java:36"
             },
             "keyword": "Then "
           }

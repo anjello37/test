@@ -17,14 +17,14 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 10153448379,
+  "duration": 11305880668,
   "status": "passed"
 });
 formatter.scenario({
   "line": 5,
-  "name": "Successful Login",
+  "name": "Successful Login via COSMAPP",
   "description": "",
-  "id": "login;successful-login",
+  "id": "login;successful-login-via-cosmapp",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -36,7 +36,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "I am on Login Page",
+  "name": "I am on Login Page and COSMAPP is present",
   "keyword": "Given "
 });
 formatter.step({
@@ -46,32 +46,38 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "I should be able to login successfully",
+  "name": "I should be able to login successfully via COSMAPP",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "loginStepdefs.java:14"
-});
-formatter.result({
-  "duration": 14697171021,
-  "status": "passed"
 });
 formatter.match({
   "location": "loginStepdefs.java:20"
 });
 formatter.result({
-  "duration": 12141243759,
+  "duration": 16902909770,
   "status": "passed"
 });
 formatter.match({
-  "location": "loginStepdefs.java:24"
+  "arguments": [
+    {
+      "val": "correct",
+      "offset": 8
+    }
+  ],
+  "location": "loginStepdefs.java:26"
 });
 formatter.result({
-  "duration": 136834433,
+  "duration": 20959137969,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginStepdefs.java:36"
+});
+formatter.result({
+  "duration": 150932733,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1189691625,
+  "duration": 1185357961,
   "status": "passed"
 });
 });

@@ -242,7 +242,7 @@ public class WebDriverHelper {
         }
     }
     
-    /*
+    /**
      * Method to select value for dropdown list
      * 
      * @param webElement

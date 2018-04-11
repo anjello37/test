@@ -26,6 +26,10 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 	@FindBy(css = "button[type='submit']")
 	private WebElement btn_submit;
 	
+	@FindBy(xpath = "//li[@role='presentation'][9]//a[@id='sign-in']")
+	private WebElement btn_login;
+	
+	
 	/* Methods */
 	
 	/**
@@ -41,6 +45,20 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 	 */
 	public void navigateToLoginPage() {
 		log.entry();
+		if(driverHelper.isElementPresent(btn_login)) {
+			driverHelper.clickButton(btn_login);
+			log.exit();
+		} else {
+			log.error("Element is not present.");
+			log.exit();
+		}
+	}
+	
+	/**
+	 * Go to Login Page via COSMAPP
+	 */
+	public void navigateToLoginPageViaCOSMAPP() {
+		log.entry();
 		if(driverHelper.isElementPresent(img_COSMAPP)) {
 			driverHelper.scrollIntoView(img_COSMAPP);
 				driverHelper.jsClick(img_COSMAPP);
@@ -54,18 +72,32 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 	/**
 	 * Login using correct username and password
 	 */
-	public void login() {
+	public void login(String userName) {
 		log.entry();
 		if(driverHelper.isElementPresent(fld_userName)) {
 			fld_userName.clear();
-			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.username"));
-			log.info("Username entered successfully.");
+			userNameInput(userName);					
 			fld_password.sendKeys(PropertyUtil.getTestDataProp("employee.password"));
 			log.info("Password entered successfully.");
 			driverHelper.clickButton(btn_submit);
 			log.exit();
 		} else {
 			log.error("Element is not present.");
+			log.exit();
+		}
+	}
+	
+	/**
+	 * user name input checker
+	 * @param userName
+	 */
+	public void userNameInput(String userName) {
+		if(userName.equals("correct")) {
+			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.correct.username"));
+			log.info("Username entered successfully.");
+		} else if(userName.equals("incorrect")) {
+			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.incorrect.username"));
+			log.info("Username entered successfully.");
 		}
 	}
 }
