@@ -72,11 +72,12 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 	/**
 	 * Login using correct username and password
 	 */
-	public void login(String userName) {
+	public void login() {
 		log.entry();
 		if(driverHelper.isElementPresent(fld_userName)) {
 			fld_userName.clear();
-			userNameInput(userName);					
+			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.correct.username"));
+			log.info("Username entered successfully.");
 			fld_password.sendKeys(PropertyUtil.getTestDataProp("employee.password"));
 			log.info("Password entered successfully.");
 			driverHelper.clickButton(btn_submit);
@@ -87,17 +88,4 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 		}
 	}
 	
-	/**
-	 * user name input checker
-	 * @param userName
-	 */
-	public void userNameInput(String userName) {
-		if(userName.equals("correct")) {
-			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.correct.username"));
-			log.info("Username entered successfully.");
-		} else if(userName.equals("incorrect")) {
-			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.incorrect.username"));
-			log.info("Username entered successfully.");
-		}
-	}
 }

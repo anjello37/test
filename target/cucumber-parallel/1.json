@@ -3,10 +3,31 @@
     "line": 2,
     "elements": [
       {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 28607726380,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am logged in",
+            "match": {
+              "location": "COSMAPPMenuStepdefs.java:16"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 11305880668,
+              "duration": 11103439741,
               "status": "passed"
             },
             "match": {
@@ -14,14 +35,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Successful Login via COSMAPP",
+        "line": 10,
+        "name": "Navigate to Quadro Applicativo",
         "description": "",
-        "id": "login;successful-login-via-cosmapp",
+        "id": "cosmapp-menu;navigate-to-quadro-applicativo",
         "after": [
           {
             "result": {
-              "duration": 1185357961,
+              "duration": 1603414094,
               "status": "passed"
             },
             "match": {
@@ -34,68 +55,62 @@
         "steps": [
           {
             "result": {
-              "duration": 16902909770,
+              "duration": 331173200,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I am on Login Page and COSMAPP is present",
-            "match": {
-              "location": "loginStepdefs.java:20"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 20959137969,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I enter correct username and password",
+            "line": 11,
+            "name": "I clicked Quadro Applicativo from COSMAPP menu bar",
             "match": {
               "arguments": [
                 {
-                  "val": "correct",
-                  "offset": 8
+                  "val": "Quadro Applicativo",
+                  "offset": 10
                 }
               ],
-              "location": "loginStepdefs.java:26"
+              "location": "COSMAPPMenuStepdefs.java:25"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 150932733,
+              "duration": 15054085259,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I should be able to login successfully via COSMAPP",
+            "line": 12,
+            "name": "I should be able to navigate to Quadro Applicativo",
             "match": {
-              "location": "loginStepdefs.java:36"
+              "arguments": [
+                {
+                  "val": "Quadro Applicativo",
+                  "offset": 32
+                }
+              ],
+              "location": "COSMAPPMenuStepdefs.java:30"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 9,
             "name": "@onescenario"
           }
         ]
       }
     ],
-    "name": "Login",
-    "description": "",
-    "id": "login",
+    "name": "COSMAPP Menu",
+    "description": "As a user\r\nI want to be able to navigate to different parts of the system",
+    "id": "cosmapp-menu",
     "keyword": "Feature",
-    "uri": "C:/Users/clavios/eclipse-workspace/CSMAutomation/src/test/resources/features/Login.feature",
+    "uri": "C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/COSMAPPMenu.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@scenarios"
+        "name": "@COSMAPPMenu"
       },
       {
         "line": 1,
-        "name": "@login"
+        "name": "@scenarios"
       }
     ]
   }

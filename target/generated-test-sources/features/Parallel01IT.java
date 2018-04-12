@@ -15,8 +15,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"C:/Users/clavios/eclipse-workspace/CSMAutomation/src/test/resources/features/Login.feature"},
-        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:/Users/clavios/eclipse-workspace/CSMAutomation/target/cucumber-parallel/1.html", "json:C:/Users/clavios/eclipse-workspace/CSMAutomation/target/cucumber-parallel/1.json", "html:C:/Users/clavios/eclipse-workspace/CSMAutomation/target/cucumber-parallel/1"},
+        features = {"C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/COSMAPPMenu.feature"},
+        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1.html", "json:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1.json", "html:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1"},
         monochrome = false,
         
         tags = {"@onescenario"},

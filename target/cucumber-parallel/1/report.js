@@ -1,83 +1,96 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/eclipse-workspace/CSMAutomation/src/test/resources/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/COSMAPPMenu.feature");
 formatter.feature({
   "line": 2,
-  "name": "Login",
-  "description": "",
-  "id": "login",
+  "name": "COSMAPP Menu",
+  "description": "As a user\r\nI want to be able to navigate to different parts of the system",
+  "id": "cosmapp-menu",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@scenarios"
+      "name": "@COSMAPPMenu"
     },
     {
       "line": 1,
-      "name": "@login"
+      "name": "@scenarios"
     }
   ]
 });
 formatter.before({
-  "duration": 11305880668,
+  "duration": 11103439741,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 7,
+  "name": "I am logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "COSMAPPMenuStepdefs.java:16"
+});
+formatter.result({
+  "duration": 28607726380,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 5,
-  "name": "Successful Login via COSMAPP",
+  "line": 10,
+  "name": "Navigate to Quadro Applicativo",
   "description": "",
-  "id": "login;successful-login-via-cosmapp",
+  "id": "cosmapp-menu;navigate-to-quadro-applicativo",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 4,
+      "line": 9,
       "name": "@onescenario"
     }
   ]
 });
 formatter.step({
-  "line": 6,
-  "name": "I am on Login Page and COSMAPP is present",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "I enter correct username and password",
+  "line": 11,
+  "name": "I clicked Quadro Applicativo from COSMAPP menu bar",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "I should be able to login successfully via COSMAPP",
+  "line": 12,
+  "name": "I should be able to navigate to Quadro Applicativo",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginStepdefs.java:20"
+  "arguments": [
+    {
+      "val": "Quadro Applicativo",
+      "offset": 10
+    }
+  ],
+  "location": "COSMAPPMenuStepdefs.java:25"
 });
 formatter.result({
-  "duration": 16902909770,
+  "duration": 331173200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "correct",
-      "offset": 8
+      "val": "Quadro Applicativo",
+      "offset": 32
     }
   ],
-  "location": "loginStepdefs.java:26"
+  "location": "COSMAPPMenuStepdefs.java:30"
 });
 formatter.result({
-  "duration": 20959137969,
-  "status": "passed"
-});
-formatter.match({
-  "location": "loginStepdefs.java:36"
-});
-formatter.result({
-  "duration": 150932733,
+  "duration": 15054085259,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1185357961,
+  "duration": 1603414094,
   "status": "passed"
 });
 });

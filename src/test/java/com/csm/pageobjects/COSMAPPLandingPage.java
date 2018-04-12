@@ -25,16 +25,12 @@ private static final Logger log = LogManager.getLogger(COSMAPPLandingPage.class)
 	public boolean isUserSuccessfullyLoggedIn() {
 		log.entry();
 		driverHelper.waitForPageLoaded();
-		if (driverHelper.isElementVisible(link_Profile)) {
+		if (driverHelper.isElementPresent(link_Profile)) {
 			log.info("User is successfully logged in.");
 			log.exit();
 			return true;
-		} else if(driverHelper.isElementVisible(msg_loginError)) {
-			log.info("Incorrect username.");
-			log.exit();
-			return false;
 		} 
-		log.info("Incorrect username.");
+		log.info("User is NOT successfully logged in.");
 		log.exit();
 		return false;	
 	}
