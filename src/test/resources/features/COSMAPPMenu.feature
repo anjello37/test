@@ -1,7 +1,7 @@
 @COSMAPPMenu @scenarios 
 Feature: COSMAPP Menu
 	As a user
-	I want to be able to navigate to different parts of the system
+	I want to be able to navigate to the items in COSMAPP Menu Bar
 	
 Background:
 	Given I am logged in

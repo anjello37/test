@@ -2,7 +2,7 @@
 Feature: Login
   As a user
   I want to be able to login successfully using valid credentials
-	
+
 Scenario: Successful Login via COSMAPP
 	Given I am on Login Page and COSMAPP is present
 	When I enter correct username and password
