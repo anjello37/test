@@ -1,6 +1,7 @@
 package com.csm.utils;
 
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -214,7 +216,7 @@ public class WebDriverHelper {
      * @param elementBy
      * @throws InterruptedException
      */
-    public void jsClick(By elementBy) throws Exception {
+    public void jsClick(By elementBy) {
 
         WebElement weElement = driver.findElement(elementBy);
         try {

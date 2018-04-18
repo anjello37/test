@@ -1,10 +1,13 @@
 package com.csm.pageobjects;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 import com.csm.utils.PropertyUtil;
 
@@ -40,6 +43,7 @@ private static final Logger log = LogManager.getLogger(COSMAPPMenuBarPage.class)
 	 * Verify if corrrect COSMAPP Menu Item page is shown
 	 * @param cosmappMenu
 	 * @return
+	 * @throws InterruptedException 
 	 */
 	public boolean isCOSMAPPMenuBarLandingPageShown(String cosmappMenu) {
 		log.entry();
@@ -47,45 +51,66 @@ private static final Logger log = LogManager.getLogger(COSMAPPMenuBarPage.class)
 		if(driverHelper.isElementPresent(title_COSMAPPMenu)) {
 			String titleName = title_COSMAPPMenu.getText();
 			switch (cosmappMenu) {
-	        case "Quadro Applicativo":
+		       case "Quadro Applicativo":
 				if(PropertyUtil.getTestDataProp("landing.page.quadro.applicativo").equals(titleName)) {
 					log.info("Navigate to page successfully.");
 					log.exit();
 					return true;
 				}
-	            break;
-	        case "Nuove Attività":
+		           break;
+		       case "Nuove Attività":
 				if(PropertyUtil.getTestDataProp("landing.page.nuove.attivita").equals(titleName)) {
 					log.info("Navigate to page successfully.");
 					log.exit();
 					return true;
 				}
-	            break;
-	        case "Attività In Corso":
-				if(PropertyUtil.getTestDataProp("landing.page.attivita.in.corso").equals(titleName)) {
-					log.info("Navigate to page successfully.");
-					log.exit();
-					return true;
-				}
-	            break;
-	        case "Comunicazioni":
-				if(PropertyUtil.getTestDataProp("landing.page.comunicazioni").equals(titleName)) {
-					log.info("Navigate to page successfully.");
-					log.exit();
-					return true;
-				}
-	            break;
-	        case "Calendario":
-				if(PropertyUtil.getTestDataProp("landing.page.calendario").equals(titleName)) {
-					log.info("Navigate to page successfully.");
-					log.exit();
-					return true;
-				}
-	            break;
-	        default:
-	        	break;
-	    	}
-		}
+		           break;
+		        case "Attività In Corso":
+					if(PropertyUtil.getTestDataProp("landing.page.attivita.in.corso").equals(titleName)) {
+						log.info("Navigate to page successfully.");
+						log.exit();
+						return true;
+					}
+		            break;
+		        case "Comunicazioni":
+					if(PropertyUtil.getTestDataProp("landing.page.comunicazioni").equals(titleName)) {
+						log.info("Navigate to page successfully.");
+						log.exit();
+						return true;
+					}
+		            break;
+		        case "Calendario":
+					if(PropertyUtil.getTestDataProp("landing.page.calendario").equals(titleName)) {
+						log.info("Navigate to page successfully.");
+						log.exit();
+						return true;
+					}
+		            break;
+		        case "Gestione post-Plenum":
+					if(PropertyUtil.getTestDataProp("landing.page.gestione.post-Plenum").equals(titleName)) {
+						log.info("Navigate to page successfully.");
+						log.exit();
+						return true;
+					}
+		            break;
+		        case "Visualizza":
+					if(PropertyUtil.getTestDataProp("landing.page.visualizza").equals(titleName)) {
+						log.info("Navigate to page successfully.");
+						log.exit();
+						return true;
+					}
+		            break;
+		        case "ODG di Consiglio Giudiziario e Direttivo di Cassazione":
+					if(PropertyUtil.getTestDataProp("landing.page.ODG.di.consiglio.giudiziario.e.direttivo.di.cassazione").equals(titleName)) {
+						log.info("Navigate to page successfully.");
+						log.exit();
+						return true;
+					}
+		            break;
+		        default:
+		        	break;
+		    	}
+			}
 		log.info("Navigate to page unsuccessful.");
 		log.exit();
 		return false;	

@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/COSMAPPMenu.feature"},
+        features = {"C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Concorso/Concorso.feature"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1.html", "json:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1.json", "html:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1"},
         monochrome = false,
         

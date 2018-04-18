@@ -1,3 +1,4 @@
+C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\pageobjects\QuadroApplicativoPage.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\pageobjects\COSMAPPLandingPage.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\pageobjects\COSMAPPMenuBarPage.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\utils\ScenarioName.java
@@ -6,7 +7,6 @@ C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\stepdefs\Scen
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\browserhelper\ChromeBrowserDriver.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\utils\PropertyUtil.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\constants\CommonConstants.java
-C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\pageobjects\LandingPage.java
 C:\Users\clavios\Documents\Git\CSMAutomation\target\generated-test-sources\features\Parallel01IT.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\stepdefs\COSMAPPMenuStepdefs.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\browserhelper\IEBrowserDriver.java
@@ -14,4 +14,6 @@ C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\utils\WebDriv
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\browserhelper\BrowserBuilder.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\runner\JunitRunner.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\pageobjects\LoginPage.java
+C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\stepdefs\CalendarioStepdefs.java
+C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\stepdefs\ConcorsoStepdefs.java
 C:\Users\clavios\Documents\Git\CSMAutomation\src\test\java\com\csm\stepdefs\loginStepdefs.java

@@ -1,23 +1,23 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/COSMAPPMenu.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Concorso/Concorso.feature");
 formatter.feature({
   "line": 2,
-  "name": "COSMAPP Menu",
-  "description": "As a user\r\nI want to be able to navigate to different parts of the system",
-  "id": "cosmapp-menu",
+  "name": "Concorso",
+  "description": "As a user\r\nI should be able to navigate to submenu of Concorso",
+  "id": "concorso",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@COSMAPPMenu"
+      "name": "@scenarios"
     },
     {
       "line": 1,
-      "name": "@scenarios"
+      "name": "@Concorso"
     }
   ]
 });
 formatter.before({
-  "duration": 11103439741,
+  "duration": 9347691974,
   "status": "passed"
 });
 formatter.background({
@@ -32,65 +32,101 @@ formatter.step({
   "name": "I am logged in",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 8,
+  "name": "I navigate to Quadro Applicativo",
+  "keyword": "And "
+});
 formatter.match({
-  "location": "COSMAPPMenuStepdefs.java:16"
+  "location": "COSMAPPMenuStepdefs.java:17"
 });
 formatter.result({
-  "duration": 28607726380,
+  "duration": 40604613317,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Quadro Applicativo",
+      "offset": 14
+    }
+  ],
+  "location": "CalendarioStepdefs.java:16"
+});
+formatter.result({
+  "duration": 271629653,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 10,
-  "name": "Navigate to Quadro Applicativo",
+  "line": 11,
+  "name": "Navigate to Bandi in lavorazione",
   "description": "",
-  "id": "cosmapp-menu;navigate-to-quadro-applicativo",
+  "id": "concorso;navigate-to-bandi-in-lavorazione",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 9,
+      "line": 10,
       "name": "@onescenario"
     }
   ]
 });
 formatter.step({
-  "line": 11,
-  "name": "I clicked Quadro Applicativo from COSMAPP menu bar",
+  "line": 12,
+  "name": "I expand Ricerche from CONCORSO",
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
-  "name": "I should be able to navigate to Quadro Applicativo",
+  "line": 13,
+  "name": "I click to Bandi in lavorazione",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "I should be able to go to Bandi in lavorazione",
   "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Quadro Applicativo",
-      "offset": 10
+      "val": "CONCORSO",
+      "offset": 23
     }
   ],
-  "location": "COSMAPPMenuStepdefs.java:25"
+  "location": "CalendarioStepdefs.java:27"
 });
 formatter.result({
-  "duration": 331173200,
+  "duration": 27192316439,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Quadro Applicativo",
-      "offset": 32
+      "val": "Bandi in lavorazione",
+      "offset": 11
     }
   ],
-  "location": "COSMAPPMenuStepdefs.java:30"
+  "location": "CalendarioStepdefs.java:39"
 });
 formatter.result({
-  "duration": 15054085259,
+  "duration": 555170265,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Bandi in lavorazione",
+      "offset": 26
+    }
+  ],
+  "location": "CalendarioStepdefs.java:44"
+});
+formatter.result({
+  "duration": 21816895063,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1603414094,
+  "duration": 1107102889,
   "status": "passed"
 });
 });
