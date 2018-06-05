@@ -61,6 +61,7 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 		log.entry();
 		if(driverHelper.isElementPresent(img_COSMAPP)) {
 			driverHelper.scrollIntoView(img_COSMAPP);
+			driverHelper.embedScreenshot(scenario);
 				driverHelper.jsClick(img_COSMAPP);
 			log.exit();
 		} else {
@@ -78,8 +79,10 @@ private static final Logger log = LogManager.getLogger(LoginPage.class);
 			fld_userName.clear();
 			fld_userName.sendKeys(PropertyUtil.getTestDataProp("employee.correct.username"));
 			log.info("Username entered successfully.");
+			driverHelper.embedScreenshot(scenario);
 			fld_password.sendKeys(PropertyUtil.getTestDataProp("employee.password"));
 			log.info("Password entered successfully.");
+			driverHelper.embedScreenshot(scenario);
 			driverHelper.clickButton(btn_submit);
 			log.exit();
 		} else {

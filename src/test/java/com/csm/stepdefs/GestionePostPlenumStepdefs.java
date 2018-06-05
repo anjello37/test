@@ -8,36 +8,24 @@ import com.csm.pageobjects.QuadroApplicativoPage;
 
 import cucumber.api.java8.En;
 
-public class CalendarioStepdefs implements En {
+public class GestionePostPlenumStepdefs implements En {
 	
-	public CalendarioStepdefs(ScenarioHooks hooks, COSMAPPMenuBarPage menuBarPage, 
+	public GestionePostPlenumStepdefs(ScenarioHooks hooks, COSMAPPMenuBarPage menuBarPage, 
 			QuadroApplicativoPage quadroApplicativoPage) {
 		
 		And("I navigate to (.*)$", (String cosmappMenuItem) -> {
-			menuBarPage.setDriver(hooks.getDriverHelper());
+			menuBarPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			menuBarPage.clickCOSMAPPMenuItem(cosmappMenuItem);
 		});
 		
 		When("I expand Gestione from (.*)$", (String menu) -> {
-			quadroApplicativoPage.setDriver(hooks.getDriverHelper());
+			quadroApplicativoPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			quadroApplicativoPage.expandQuadroApplicativoMenu(menu);
 			quadroApplicativoPage.clickGestione();
 		});
 		
-		When("I expand Ricerche from (.*)$", (String menu) -> {
-			quadroApplicativoPage.setDriver(hooks.getDriverHelper());
-			quadroApplicativoPage.expandQuadroApplicativoMenu(menu);
-			quadroApplicativoPage.clickRicerche(menu);
-		});
-		
-		When("I expand Operativita from (.*)$", (String menu) -> {
-			quadroApplicativoPage.setDriver(hooks.getDriverHelper());
-			quadroApplicativoPage.expandQuadroApplicativoMenu(menu);
-			quadroApplicativoPage.clickOperativita();
-		});
-		
 		And("I click to (.*)$", (String finalSubMenu) -> {
-			quadroApplicativoPage.setDriver(hooks.getDriverHelper());
+			quadroApplicativoPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			quadroApplicativoPage.clickFinalSubMenu(finalSubMenu);
 		});
 		

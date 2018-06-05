@@ -3,49 +3,10 @@
     "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 40604613317,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am logged in",
-            "match": {
-              "location": "COSMAPPMenuStepdefs.java:17"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 271629653,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I navigate to Quadro Applicativo",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Quadro Applicativo",
-                  "offset": 14
-                }
-              ],
-              "location": "CalendarioStepdefs.java:16"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
         "before": [
           {
             "result": {
-              "duration": 9347691974,
+              "duration": 10194945887,
               "status": "passed"
             },
             "match": {
@@ -53,14 +14,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Navigate to Bandi in lavorazione",
+        "line": 7,
+        "name": "Navigate to Visualizza",
         "description": "",
-        "id": "concorso;navigate-to-bandi-in-lavorazione",
+        "id": "visualizza;navigate-to-visualizza",
         "after": [
           {
             "result": {
-              "duration": 1107102889,
+              "duration": 1167217814,
               "status": "passed"
             },
             "match": {
@@ -73,72 +34,102 @@
         "steps": [
           {
             "result": {
-              "duration": 27192316439,
+              "duration": 29263565878,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I expand Ricerche from CONCORSO",
+            "line": 8,
+            "name": "I am logged in",
             "match": {
-              "arguments": [
-                {
-                  "val": "CONCORSO",
-                  "offset": 23
-                }
-              ],
-              "location": "CalendarioStepdefs.java:27"
+              "location": "COSMAPPMenuStepdefs.java:17"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 555170265,
+              "duration": 637817918,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I click to Bandi in lavorazione",
+            "line": 9,
+            "name": "I navigate to Quadro Applicativo",
             "match": {
               "arguments": [
                 {
-                  "val": "Bandi in lavorazione",
-                  "offset": 11
+                  "val": "Quadro Applicativo",
+                  "offset": 14
                 }
               ],
-              "location": "CalendarioStepdefs.java:39"
+              "location": "GestionePostPlenumStepdefs.java:16"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 21816895063,
+              "duration": 6909054263,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I should be able to go to Bandi in lavorazione",
+            "line": 10,
+            "name": "I expand Ricerche from CALENDARIO",
             "match": {
               "arguments": [
                 {
-                  "val": "Bandi in lavorazione",
+                  "val": "CALENDARIO",
+                  "offset": 23
+                }
+              ],
+              "location": "VisualizzaStepdefs.java:11"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 806548965,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click to Visualizza",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Visualizza",
+                  "offset": 11
+                }
+              ],
+              "location": "GestionePostPlenumStepdefs.java:27"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10963355393,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be able to go to Visualizza",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Visualizza",
                   "offset": 26
                 }
               ],
-              "location": "CalendarioStepdefs.java:44"
+              "location": "GestionePostPlenumStepdefs.java:32"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 10,
+            "line": 6,
             "name": "@onescenario"
           }
         ]
       }
     ],
-    "name": "Concorso",
-    "description": "As a user\r\nI should be able to navigate to submenu of Concorso",
-    "id": "concorso",
+    "name": "Visualizza",
+    "description": "As a user\r\nI should be able to navigate to Visualizza",
+    "id": "visualizza",
     "keyword": "Feature",
-    "uri": "C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Concorso/Concorso.feature",
+    "uri": "C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Calendario/Visualizza.feature",
     "tags": [
       {
         "line": 1,
@@ -146,7 +137,7 @@
       },
       {
         "line": 1,
-        "name": "@Concorso"
+        "name": "@Visualizza"
       }
     ]
   }

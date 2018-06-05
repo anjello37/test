@@ -26,6 +26,7 @@ private static final Logger log = LogManager.getLogger(COSMAPPLandingPage.class)
 		log.entry();
 		driverHelper.waitForPageLoaded();
 		if (driverHelper.isElementPresent(link_Profile)) {
+			driverHelper.embedScreenshot(scenario);
 			log.info("User is successfully logged in.");
 			log.exit();
 			return true;

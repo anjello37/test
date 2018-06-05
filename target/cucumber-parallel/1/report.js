@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Concorso/Concorso.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Calendario/Visualizza.feature");
 formatter.feature({
   "line": 2,
-  "name": "Concorso",
-  "description": "As a user\r\nI should be able to navigate to submenu of Concorso",
-  "id": "concorso",
+  "name": "Visualizza",
+  "description": "As a user\r\nI should be able to navigate to Visualizza",
+  "id": "visualizza",
   "keyword": "Feature",
   "tags": [
     {
@@ -12,36 +12,58 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@Concorso"
+      "name": "@Visualizza"
     }
   ]
 });
 formatter.before({
-  "duration": 9347691974,
+  "duration": 10194945887,
   "status": "passed"
 });
-formatter.background({
-  "line": 6,
-  "name": "",
+formatter.scenario({
+  "line": 7,
+  "name": "Navigate to Visualizza",
   "description": "",
-  "type": "background",
-  "keyword": "Background"
+  "id": "visualizza;navigate-to-visualizza",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@onescenario"
+    }
+  ]
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I am logged in",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "I navigate to Quadro Applicativo",
   "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I expand Ricerche from CALENDARIO",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I click to Visualizza",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I should be able to go to Visualizza",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "COSMAPPMenuStepdefs.java:17"
 });
 formatter.result({
-  "duration": 40604613317,
+  "duration": 29263565878,
   "status": "passed"
 });
 formatter.match({
@@ -51,82 +73,53 @@ formatter.match({
       "offset": 14
     }
   ],
-  "location": "CalendarioStepdefs.java:16"
+  "location": "GestionePostPlenumStepdefs.java:16"
 });
 formatter.result({
-  "duration": 271629653,
+  "duration": 637817918,
   "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "Navigate to Bandi in lavorazione",
-  "description": "",
-  "id": "concorso;navigate-to-bandi-in-lavorazione",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 10,
-      "name": "@onescenario"
-    }
-  ]
-});
-formatter.step({
-  "line": 12,
-  "name": "I expand Ricerche from CONCORSO",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click to Bandi in lavorazione",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "I should be able to go to Bandi in lavorazione",
-  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "CONCORSO",
+      "val": "CALENDARIO",
       "offset": 23
     }
   ],
-  "location": "CalendarioStepdefs.java:27"
+  "location": "VisualizzaStepdefs.java:11"
 });
 formatter.result({
-  "duration": 27192316439,
+  "duration": 6909054263,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bandi in lavorazione",
+      "val": "Visualizza",
       "offset": 11
     }
   ],
-  "location": "CalendarioStepdefs.java:39"
+  "location": "GestionePostPlenumStepdefs.java:27"
 });
 formatter.result({
-  "duration": 555170265,
+  "duration": 806548965,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bandi in lavorazione",
+      "val": "Visualizza",
       "offset": 26
     }
   ],
-  "location": "CalendarioStepdefs.java:44"
+  "location": "GestionePostPlenumStepdefs.java:32"
 });
 formatter.result({
-  "duration": 21816895063,
+  "duration": 10963355393,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1107102889,
+  "duration": 1167217814,
   "status": "passed"
 });
 });
