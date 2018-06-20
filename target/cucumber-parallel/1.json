@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 10194945887,
+              "duration": 11680148553,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 7,
-        "name": "Navigate to Visualizza",
+        "name": "Navigate to Inserimento provvedimento giurisdizionale",
         "description": "",
-        "id": "visualizza;navigate-to-visualizza",
+        "id": "inserimento-provvedimento-giurisdizionale;navigate-to-inserimento-provvedimento-giurisdizionale",
         "after": [
           {
             "result": {
-              "duration": 1167217814,
+              "duration": 1658438352,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 29263565878,
+              "duration": 36506943990,
               "status": "passed"
             },
             "line": 8,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 637817918,
+              "duration": 887421822,
               "status": "passed"
             },
             "line": 9,
@@ -64,33 +64,33 @@
           },
           {
             "result": {
-              "duration": 6909054263,
+              "duration": 10413717250,
               "status": "passed"
             },
             "line": 10,
-            "name": "I expand Ricerche from CALENDARIO",
+            "name": "I expand Gestione from DISCIPLINARE",
             "match": {
               "arguments": [
                 {
-                  "val": "CALENDARIO",
+                  "val": "DISCIPLINARE",
                   "offset": 23
                 }
               ],
-              "location": "VisualizzaStepdefs.java:11"
+              "location": "GestionePostPlenumStepdefs.java:21"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 806548965,
+              "duration": 1192965942,
               "status": "passed"
             },
             "line": 11,
-            "name": "I click to Visualizza",
+            "name": "I click to Inserimento provvedimento giurisdizionale",
             "match": {
               "arguments": [
                 {
-                  "val": "Visualizza",
+                  "val": "Inserimento provvedimento giurisdizionale",
                   "offset": 11
                 }
               ],
@@ -100,15 +100,15 @@
           },
           {
             "result": {
-              "duration": 10963355393,
+              "duration": 8531230965,
               "status": "passed"
             },
             "line": 12,
-            "name": "I should be able to go to Visualizza",
+            "name": "I should be able to go to Inserimento provvedimento giurisdizionale",
             "match": {
               "arguments": [
                 {
-                  "val": "Visualizza",
+                  "val": "Inserimento provvedimento giurisdizionale",
                   "offset": 26
                 }
               ],
@@ -120,16 +120,16 @@
         "tags": [
           {
             "line": 6,
-            "name": "@onescenario"
+            "name": "@runscenario"
           }
         ]
       }
     ],
-    "name": "Visualizza",
-    "description": "As a user\r\nI should be able to navigate to Visualizza",
-    "id": "visualizza",
+    "name": "Inserimento provvedimento giurisdizionale",
+    "description": "As a user\r\nI should be able to navigate to Inserimento provvedimento giurisdizionale",
+    "id": "inserimento-provvedimento-giurisdizionale",
     "keyword": "Feature",
-    "uri": "C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Calendario/Visualizza.feature",
+    "uri": "C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Disciplinare/InserimentoProvvedimentoGiurisdizionale.feature",
     "tags": [
       {
         "line": 1,
@@ -137,7 +137,7 @@
       },
       {
         "line": 1,
-        "name": "@Visualizza"
+        "name": "@InserimentoProvvedimentoGiurisdizionale"
       }
     ]
   }

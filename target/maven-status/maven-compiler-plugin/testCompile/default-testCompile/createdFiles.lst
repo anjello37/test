@@ -13,6 +13,7 @@ com\csm\pageobjects\COSMAPPMenuBarPage.class
 com\csm\stepdefs\ScenarioHooks.class
 com\csm\stepdefs\AttiStepdefs.class
 com\csm\utils\WebDriverHelper$1.class
+com\csm\stepdefs\TipoProvvedimentoGiurisdizionale.class
 com\csm\stepdefs\ODGDiCommissioneStepdefs.class
 com\csm\stepdefs\GestionePostPlenumStepdefs.class
 Parallel01IT.class

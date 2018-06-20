@@ -11,7 +11,7 @@ public class ODGDiCommissioneStepdefs implements En {
 		When("I expand Operativita from (.*)$", (String menu) -> {
 			quadroApplicativoPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			quadroApplicativoPage.expandQuadroApplicativoMenu(menu);
-			quadroApplicativoPage.clickOperativita();
+			quadroApplicativoPage.clickOperativita(menu);
 		});
 	}
 }

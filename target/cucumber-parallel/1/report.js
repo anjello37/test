@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Calendario/Visualizza.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Disciplinare/InserimentoProvvedimentoGiurisdizionale.feature");
 formatter.feature({
   "line": 2,
-  "name": "Visualizza",
-  "description": "As a user\r\nI should be able to navigate to Visualizza",
-  "id": "visualizza",
+  "name": "Inserimento provvedimento giurisdizionale",
+  "description": "As a user\r\nI should be able to navigate to Inserimento provvedimento giurisdizionale",
+  "id": "inserimento-provvedimento-giurisdizionale",
   "keyword": "Feature",
   "tags": [
     {
@@ -12,25 +12,25 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@Visualizza"
+      "name": "@InserimentoProvvedimentoGiurisdizionale"
     }
   ]
 });
 formatter.before({
-  "duration": 10194945887,
+  "duration": 11680148553,
   "status": "passed"
 });
 formatter.scenario({
   "line": 7,
-  "name": "Navigate to Visualizza",
+  "name": "Navigate to Inserimento provvedimento giurisdizionale",
   "description": "",
-  "id": "visualizza;navigate-to-visualizza",
+  "id": "inserimento-provvedimento-giurisdizionale;navigate-to-inserimento-provvedimento-giurisdizionale",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 6,
-      "name": "@onescenario"
+      "name": "@runscenario"
     }
   ]
 });
@@ -46,24 +46,24 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I expand Ricerche from CALENDARIO",
+  "name": "I expand Gestione from DISCIPLINARE",
   "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "I click to Visualizza",
+  "name": "I click to Inserimento provvedimento giurisdizionale",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "I should be able to go to Visualizza",
+  "name": "I should be able to go to Inserimento provvedimento giurisdizionale",
   "keyword": "Then "
 });
 formatter.match({
   "location": "COSMAPPMenuStepdefs.java:17"
 });
 formatter.result({
-  "duration": 29263565878,
+  "duration": 36506943990,
   "status": "passed"
 });
 formatter.match({
@@ -76,50 +76,50 @@ formatter.match({
   "location": "GestionePostPlenumStepdefs.java:16"
 });
 formatter.result({
-  "duration": 637817918,
+  "duration": 887421822,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "CALENDARIO",
+      "val": "DISCIPLINARE",
       "offset": 23
     }
   ],
-  "location": "VisualizzaStepdefs.java:11"
+  "location": "GestionePostPlenumStepdefs.java:21"
 });
 formatter.result({
-  "duration": 6909054263,
+  "duration": 10413717250,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Visualizza",
+      "val": "Inserimento provvedimento giurisdizionale",
       "offset": 11
     }
   ],
   "location": "GestionePostPlenumStepdefs.java:27"
 });
 formatter.result({
-  "duration": 806548965,
+  "duration": 1192965942,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Visualizza",
+      "val": "Inserimento provvedimento giurisdizionale",
       "offset": 26
     }
   ],
   "location": "GestionePostPlenumStepdefs.java:32"
 });
 formatter.result({
-  "duration": 10963355393,
+  "duration": 8531230965,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1167217814,
+  "duration": 1658438352,
   "status": "passed"
 });
 });

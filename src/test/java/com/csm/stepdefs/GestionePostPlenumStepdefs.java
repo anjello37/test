@@ -21,7 +21,7 @@ public class GestionePostPlenumStepdefs implements En {
 		When("I expand Gestione from (.*)$", (String menu) -> {
 			quadroApplicativoPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			quadroApplicativoPage.expandQuadroApplicativoMenu(menu);
-			quadroApplicativoPage.clickGestione();
+			quadroApplicativoPage.clickGestione(menu);
 		});
 		
 		And("I click to (.*)$", (String finalSubMenu) -> {
