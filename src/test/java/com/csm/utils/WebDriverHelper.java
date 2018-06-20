@@ -1,13 +1,19 @@
 package com.csm.utils;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +26,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.csm.constants.CommonConstants;
+import com.cucumber.listener.Reporter;
+
+import cucumber.api.Scenario;
 
 public class WebDriverHelper {
 	private static final Logger log = LogManager.getLogger(WebDriverHelper.class);
@@ -266,4 +275,21 @@ public class WebDriverHelper {
     		Assert.fail("Exception: " + e);
     	}
     }
+    
+    /**
+     * 
+     * @param scenario
+     * @return String
+     */
+	public void embedScreenshot(Scenario scenario) {
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		String outPath = System.getProperty("user.dir") + "\\target\\screenshots\\" + scenario.getId().split(";")[0] + "\\" + scenario.getName().replaceAll("\\s", "_") + "_" + timeStamp + ".png";
+		try {
+			File scrFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File(outPath).getAbsoluteFile());
+			Reporter.addScreenCaptureFromPath(outPath);
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+	}
 }

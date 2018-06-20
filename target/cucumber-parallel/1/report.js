@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Concorso/Concorso.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Disciplinare/InserimentoProvvedimentoGiurisdizionale.feature");
 formatter.feature({
   "line": 2,
-  "name": "Concorso",
-  "description": "As a user\r\nI should be able to navigate to submenu of Concorso",
-  "id": "concorso",
+  "name": "Inserimento provvedimento giurisdizionale",
+  "description": "As a user\r\nI should be able to navigate to Inserimento provvedimento giurisdizionale",
+  "id": "inserimento-provvedimento-giurisdizionale",
   "keyword": "Feature",
   "tags": [
     {
@@ -12,36 +12,58 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@Concorso"
+      "name": "@InserimentoProvvedimentoGiurisdizionale"
     }
   ]
 });
 formatter.before({
-  "duration": 9347691974,
+  "duration": 11680148553,
   "status": "passed"
 });
-formatter.background({
-  "line": 6,
-  "name": "",
+formatter.scenario({
+  "line": 7,
+  "name": "Navigate to Inserimento provvedimento giurisdizionale",
   "description": "",
-  "type": "background",
-  "keyword": "Background"
+  "id": "inserimento-provvedimento-giurisdizionale;navigate-to-inserimento-provvedimento-giurisdizionale",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@runscenario"
+    }
+  ]
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I am logged in",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "I navigate to Quadro Applicativo",
   "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "I expand Gestione from DISCIPLINARE",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I click to Inserimento provvedimento giurisdizionale",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "I should be able to go to Inserimento provvedimento giurisdizionale",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "COSMAPPMenuStepdefs.java:17"
 });
 formatter.result({
-  "duration": 40604613317,
+  "duration": 36506943990,
   "status": "passed"
 });
 formatter.match({
@@ -51,82 +73,53 @@ formatter.match({
       "offset": 14
     }
   ],
-  "location": "CalendarioStepdefs.java:16"
+  "location": "GestionePostPlenumStepdefs.java:16"
 });
 formatter.result({
-  "duration": 271629653,
+  "duration": 887421822,
   "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "Navigate to Bandi in lavorazione",
-  "description": "",
-  "id": "concorso;navigate-to-bandi-in-lavorazione",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 10,
-      "name": "@onescenario"
-    }
-  ]
-});
-formatter.step({
-  "line": 12,
-  "name": "I expand Ricerche from CONCORSO",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click to Bandi in lavorazione",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "I should be able to go to Bandi in lavorazione",
-  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "CONCORSO",
+      "val": "DISCIPLINARE",
       "offset": 23
     }
   ],
-  "location": "CalendarioStepdefs.java:27"
+  "location": "GestionePostPlenumStepdefs.java:21"
 });
 formatter.result({
-  "duration": 27192316439,
+  "duration": 10413717250,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bandi in lavorazione",
+      "val": "Inserimento provvedimento giurisdizionale",
       "offset": 11
     }
   ],
-  "location": "CalendarioStepdefs.java:39"
+  "location": "GestionePostPlenumStepdefs.java:27"
 });
 formatter.result({
-  "duration": 555170265,
+  "duration": 1192965942,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Bandi in lavorazione",
+      "val": "Inserimento provvedimento giurisdizionale",
       "offset": 26
     }
   ],
-  "location": "CalendarioStepdefs.java:44"
+  "location": "GestionePostPlenumStepdefs.java:32"
 });
 formatter.result({
-  "duration": 21816895063,
+  "duration": 8531230965,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1107102889,
+  "duration": 1658438352,
   "status": "passed"
 });
 });

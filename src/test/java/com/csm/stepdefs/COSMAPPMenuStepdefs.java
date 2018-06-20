@@ -15,8 +15,8 @@ public class COSMAPPMenuStepdefs implements En {
 			COSMAPPMenuBarPage menuBarPage) {
 		
 		Given("I am logged in$", () -> {
-			loginPage.setDriver(hooks.getDriverHelper());
-			landingPage.setDriver(hooks.getDriverHelper());
+			loginPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
+			landingPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			loginPage.navigateToHomePage();
 			loginPage.navigateToLoginPageViaCOSMAPP();
 			loginPage.login();
@@ -24,7 +24,7 @@ public class COSMAPPMenuStepdefs implements En {
 		});
 		
 		When("I clicked (.*) from COSMAPP menu bar$", (String cosmappMenuItem) -> {
-			menuBarPage.setDriver(hooks.getDriverHelper());
+			menuBarPage.setDriver(hooks.getDriverHelper(), hooks.getScenarioName());
 			menuBarPage.clickCOSMAPPMenuItem(cosmappMenuItem);
 		});
 		

@@ -30,6 +30,7 @@ private static final Logger log = LogManager.getLogger(COSMAPPMenuBarPage.class)
 		driverHelper.waitForPageLoaded();
 		By menuBar = By.xpath("//a[@aria-label='"+ cosmappMenuItem +"']");
 		if (driverHelper.isElementPresent(menuBar)) {
+			driverHelper.embedScreenshot(scenario);
 			driverHelper.clickButton(menuBar);
 			log.info("Link is clicked.");
 			log.exit();
@@ -50,16 +51,17 @@ private static final Logger log = LogManager.getLogger(COSMAPPMenuBarPage.class)
 		driverHelper.waitForPageLoaded();
 		if(driverHelper.isElementPresent(title_COSMAPPMenu)) {
 			String titleName = title_COSMAPPMenu.getText();
+			driverHelper.embedScreenshot(scenario);
 			switch (cosmappMenu) {
 		       case "Quadro Applicativo":
-				if(PropertyUtil.getTestDataProp("landing.page.quadro.applicativo").equals(titleName)) {
+		    	   if(PropertyUtil.getTestDataProp("landing.page.quadro.applicativo").equals(titleName)) {
 					log.info("Navigate to page successfully.");
 					log.exit();
 					return true;
 				}
 		           break;
 		       case "Nuove Attività":
-				if(PropertyUtil.getTestDataProp("landing.page.nuove.attivita").equals(titleName)) {
+		    	   if(PropertyUtil.getTestDataProp("landing.page.nuove.attivita").equals(titleName)) {
 					log.info("Navigate to page successfully.");
 					log.exit();
 					return true;

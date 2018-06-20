@@ -6,6 +6,8 @@ import java.io.IOException;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
+import com.cucumber.listener.Reporter;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.java.Before;
 import cucumber.api.junit.Cucumber;
@@ -17,7 +19,7 @@ import cucumber.api.junit.Cucumber;
 		plugin = {
 		"pretty", "json:target/output/cucumber.json",
 		"com.cucumber.listener.ExtentCucumberFormatter:target/output/report.html"},
-		tags = {"@login"}, 
+		tags = {"@onescenario"}, 
 		monochrome = true)
 public class JunitRunner {
 	String reportName = "defaultReportName.html";
@@ -29,8 +31,8 @@ public class JunitRunner {
 	
 	@AfterClass
 	public static void tearDown() throws IOException {
-//		Reporter.loadXMLConfig(new File("src/test/resources/extent-config.xml"));
-//        Reporter.setSystemInfo("user", System.getProperty("user.name"));
-//        Reporter.setSystemInfo("os", "Windows");
+		Reporter.loadXMLConfig(new File("src/test/resources/extent-config.xml"));
+        Reporter.setSystemInfo("user", System.getProperty("user.name"));
+        Reporter.setSystemInfo("os", "Windows");
 	}
 }
