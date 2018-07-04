@@ -3,6 +3,8 @@ Feature: Tipo provvedimento giurisdizionale
 	As a user
 	I should be able to navigate to Tipo provvedimento giurisdizionale
 
+
+@runscenario
 Scenario: Navigate to Tipo provvedimento giurisdizionale
 	Given I am logged in
 	And I navigate to Quadro Applicativo

@@ -15,8 +15,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Disciplinare/InserimentoProvvedimentoGiurisdizionale.feature"},
-        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1.html", "json:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1.json", "html:C:/Users/clavios/Documents/Git/CSMAutomation/target/cucumber-parallel/1"},
+        features = {"C:/Users/pineanje/Documents/Git/CSM/src/test/resources/features/QuadroApplicativo/Disciplinare/TipoProvvedimentoGiurisdizionale.feature"},
+        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:C:/Users/pineanje/Documents/Git/CSM/target/cucumber-parallel/1.html", "json:C:/Users/pineanje/Documents/Git/CSM/target/cucumber-parallel/1.json", "html:C:/Users/pineanje/Documents/Git/CSM/target/cucumber-parallel/1"},
         monochrome = false,
         
         tags = {"@runscenario"},

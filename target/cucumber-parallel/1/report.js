@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/clavios/Documents/Git/CSMAutomation/src/test/resources/features/QuadroApplicativo/Disciplinare/InserimentoProvvedimentoGiurisdizionale.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/pineanje/Documents/Git/CSM/src/test/resources/features/QuadroApplicativo/Disciplinare/TipoProvvedimentoGiurisdizionale.feature");
 formatter.feature({
   "line": 2,
-  "name": "Inserimento provvedimento giurisdizionale",
-  "description": "As a user\r\nI should be able to navigate to Inserimento provvedimento giurisdizionale",
-  "id": "inserimento-provvedimento-giurisdizionale",
+  "name": "Tipo provvedimento giurisdizionale",
+  "description": "As a user\r\nI should be able to navigate to Tipo provvedimento giurisdizionale",
+  "id": "tipo-provvedimento-giurisdizionale",
   "keyword": "Feature",
   "tags": [
     {
@@ -12,58 +12,58 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@InserimentoProvvedimentoGiurisdizionale"
+      "name": "@TipoProvvedimentoGiurisdizionale"
     }
   ]
 });
 formatter.before({
-  "duration": 11680148553,
+  "duration": 7313642121,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 7,
-  "name": "Navigate to Inserimento provvedimento giurisdizionale",
+  "line": 8,
+  "name": "Navigate to Tipo provvedimento giurisdizionale",
   "description": "",
-  "id": "inserimento-provvedimento-giurisdizionale;navigate-to-inserimento-provvedimento-giurisdizionale",
+  "id": "tipo-provvedimento-giurisdizionale;navigate-to-tipo-provvedimento-giurisdizionale",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 6,
+      "line": 7,
       "name": "@runscenario"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "I am logged in",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "I navigate to Quadro Applicativo",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "I expand Gestione from DISCIPLINARE",
+  "line": 11,
+  "name": "I expand Dati di sistema from DISCIPLINARE",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "I click to Inserimento provvedimento giurisdizionale",
+  "line": 12,
+  "name": "I select Tipo provvedimento giurisdizionale in GESTIONE TABELLE TIPOLOGICHE",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
-  "name": "I should be able to go to Inserimento provvedimento giurisdizionale",
+  "line": 13,
+  "name": "I should be able to go to Tipo provvedimento giurisdizionale",
   "keyword": "Then "
 });
 formatter.match({
   "location": "COSMAPPMenuStepdefs.java:17"
 });
 formatter.result({
-  "duration": 36506943990,
+  "duration": 27997505873,
   "status": "passed"
 });
 formatter.match({
@@ -76,50 +76,54 @@ formatter.match({
   "location": "GestionePostPlenumStepdefs.java:16"
 });
 formatter.result({
-  "duration": 887421822,
+  "duration": 723133708,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "DISCIPLINARE",
-      "offset": 23
+      "offset": 30
     }
   ],
-  "location": "GestionePostPlenumStepdefs.java:21"
+  "location": "TipoProvvedimentoGiurisdizionale.java:11"
 });
 formatter.result({
-  "duration": 10413717250,
+  "duration": 6911570787,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Inserimento provvedimento giurisdizionale",
-      "offset": 11
+      "val": "Tipo provvedimento giurisdizionale",
+      "offset": 9
+    },
+    {
+      "val": "GESTIONE TABELLE TIPOLOGICHE",
+      "offset": 47
     }
   ],
-  "location": "GestionePostPlenumStepdefs.java:27"
+  "location": "TipoProvvedimentoGiurisdizionale.java:17"
 });
 formatter.result({
-  "duration": 1192965942,
+  "duration": 1824051793,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Inserimento provvedimento giurisdizionale",
+      "val": "Tipo provvedimento giurisdizionale",
       "offset": 26
     }
   ],
   "location": "GestionePostPlenumStepdefs.java:32"
 });
 formatter.result({
-  "duration": 8531230965,
+  "duration": 7909104018,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1658438352,
+  "duration": 1070659131,
   "status": "passed"
 });
 });
